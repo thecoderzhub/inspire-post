@@ -1,15 +1,10 @@
 "use client"
 
 import * as React from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
+// import { Moon, Sun } from "lucide-react";
 import { WavyBackground } from "@/components/ui/wavy-background";
 
-import { Button } from "@/components/ui/button";
-
 export default function App() {
-	const { theme, setTheme } = useTheme()
-
 	return (
 		<main className="flex items-center justify-center gap-2">
 			<WavyBackground className="max-w-4xl mx-auto pb-40">
