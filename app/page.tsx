@@ -1,34 +1,15 @@
-"use client"
+import HeroSection from "@/components/(homepage)/hero-section"
+import FeaturesSection from "@/components/(homepage)/features-section"
+import Footer from "@/components/(homepage)/footer"
 
-import * as React from "react";
-// import { Moon, Sun } from "lucide-react";
-import { WavyBackground } from "@/components/ui/wavy-background";
-
-export default function App() {
+export default function Page() {
 	return (
-		<main className="flex items-center justify-center gap-2">
-			<WavyBackground className="max-w-4xl mx-auto pb-40">
-				{/* <div className="flex items-center justify-center">
-					{
-						theme === "light" ?
-							<Button onClick={() => setTheme("dark")} variant="outline" size="icon">
-								<Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-								<span className="sr-only">Toggle theme</span>
-							</Button>
-							:
-							<Button onClick={() => setTheme("light")} variant="outline" size="icon">
-								<Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-							</Button>
-					}
-				</div> */}
-				<p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
-					Hero waves are cool
-				</p>
-				<p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-					Leverage the power of canvas to create a beautiful hero section
-				</p>
-			</WavyBackground>
-		</main>
+		<div className="min-h-screen">
+			<div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] dark:bg-[linear-gradient(to_right,#ffffff2e_1px,transparent_1px),linear-gradient(to_bottom,#ffffff2e_1px,transparent_1px)] dark:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#fff_70%,transparent_100%)]" />
+			<HeroSection />
+			<FeaturesSection />
+			<Footer />
+		</div>
 	)
 }
 
